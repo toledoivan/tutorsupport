@@ -1,0 +1,571 @@
+<!doctype html>
+<html>
+<head>
+	
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/path/to/src/flowchat.css" />
+
+<script src="/path/to/cdn/jquery.min.js"></script>
+
+
+
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.4.5.js"></script>
+	<script type= "text/javascript">
+		$(document).on('mobileinit', function() {
+			$.mobile.defaultPageTransition='slide'; 
+		});
+	</script>
+	
+	
+	
+<!-- Start of Async Drift Code -->
+<script>
+"use strict";
+
+!function() {
+  var t = window.driftt = window.drift = window.driftt || [];
+  if (!t.init) {
+    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+    t.factory = function(e) {
+      return function() {
+        var n = Array.prototype.slice.call(arguments);
+        return n.unshift(e), t.push(n), t;
+      };
+    }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+    }), t.load = function(t) {
+      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+      var i = document.getElementsByTagName("script")[0];
+      i.parentNode.insertBefore(o, i);
+    };
+  }
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('k36358xmkapb');
+</script>
+<!-- End of Async Drift Code -->
+	
+	<!-- BG color -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	
+	<!-- bG color -->
+	
+	
+	
+
+</head>
+<body>
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<div data-role="page" id="home" style="background-color:steelblue">
+	
+	<div data-role="header"><img src="tutoring resources.jpg" width="664" height="201" alt=""/>
+		
+	</div>
+	
+	
+	<div role="main" class="ui-content">
+		<a href="#goals" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-left">Goals of tutoring</a><br>
+		<a href="#setting" class="ui-btn ui-shadow ui-corner-all ui-icon-calendar ui-btn-icon-left">Setting the Agenda</a><br>
+		<a href="#conducting" class="ui-btn ui-shadow ui-corner-all ui-icon-action ui-btn-icon-left">Conducting a Session</a><br>
+		<a href="#closing" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-left">Closing a Session</a><br>
+		
+	
+	</div>
+	
+	
+    
+<div data-role="footer" data-position="fixed">
+				<div data-role="footer">
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#resources" data-icon="bullets">Resources</a></li>
+			<li><a href="#contact" data-icon="user">Contact</a></li>
+			
+			
+			
+		</ul>
+	</div><!-- /navbar -->
+</div><!-- /footer -->
+	</div>
+	</div>
+
+	
+
+	
+	
+
+	
+	
+		
+	
+    
+		
+		
+		
+	
+	
+	<!-- Start of goals page -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div data-role="page" id="goals" style="background-color:steelblue">
+
+	<div data-role="header">
+		<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn">Back Home</a>
+		<h1>Goals of Tutoring</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		
+		<div id="flowchat"></div>
+
+		
+		<h3 class="ui-bar ui-bar-a ui-corner-all">Tutors should help students:</h3>
+      <div class="ui-body ui-body-a ui-corner-all" ><img src="goalsImg.png" width="367" height="190" alt=""/>
+		  <ul><li><p>Understand their course content</p></li>
+		      <li><p>Improve their reading and writing skills</p></li>
+			  <li><p>Help students become self-sufficient</p></li>
+			  <li><p>Identify their strengths and weaknesses</p></li>
+		  </ul>
+      </div>
+		
+	</div><!-- /content -->
+
+	    <div data-role="footer" data-position="fixed">
+			<div data-role="footer">
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#resources" data-icon="phone">Resources</a></li>
+			<li><a href="#contact" data-icon="user">Contact</a></li>
+		
+			
+		</ul>
+	</div><!-- /navbar -->
+</div><!-- /footer -->
+	</div>
+    
+		</div>
+    
+
+
+
+
+
+
+
+
+<!-- Start of setting page -->
+	
+	
+	
+
+
+
+
+
+<div data-role="page" id="setting" style="background-color:steelblue">
+
+	<div data-role="header">
+		<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn">Back Home</a>
+		<h1>Setting the Agenda</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		
+		
+		
+			
+<div data-role="collapsible" data-inset="false" ><img src="independentImg.png" width="728" height="392" alt=""/>
+	
+    <h4>Promote Independent Learning </h4>
+	<ul><li><p>Support students on becoming self sufficient.</p></li></ul>
+	
+</div>
+	
+<div data-role="collapsible" data-inset="false"><img src="customemersrvImg.jpeg" width="728" height="392" alt=""/>
+	
+    <h4>Costumer Service </h4>
+	<ul><li><p>Convey knowledge through excellent customer service skills.</p></li></ul>
+	
+</div>
+
+<div data-role="collapsible" data-inset="false"><img src="studyatmosphereImg.jpeg" width="728" height="392" alt=""/>
+	
+    <h4>Learning Atmosphere </h4>
+	<ul><li><p>Create a positive learning atmosphere free of stress and other distractions.</p></li></ul>
+	
+</div>
+
+<div data-role="collapsible" data-inset="false"><img src="learningspaceImg.jpeg" width="728" height="392" alt=""/>
+	
+    <h4>Set up the Learning Space </h4>
+	
+	<ul><li><p>	Appropriate seating arrangement</p></li> 
+		<li><p>Appropriate noise level</p></li>
+		<li><p>	Areas free of clutter</p></li>
+		<li><p>No socializing while tutoring</p></li></ul>
+	
+</div>
+	
+<div data-role="collapsible" data-inset="false"><img src="attentiveimg.jpeg" width="728" height="392" alt=""/>
+	
+    <h4>Be Attentive</h4>
+	
+	<ul><li><p>Look directly at the student and pay close attention</p></li> 
+	<li><p>Ask questions to clarify information items</p></li> 
+		<li><p>Repeat important information conveyed by the student</p></li> </ul> 
+	
+	
+</div>
+	
+<div data-role="collapsible" data-inset="false"><img src="enthusiasticImg.jpeg" width="640" height="332" alt=""/>
+	
+    <h4>Enthusiastic</h4>
+	
+	<ul><li><p>Smile and greet students</p></li>
+		<li><p>Introduce yourselves</p></li>
+		<li><p>Reinforce positive non-verbal communication throughout the session</p></li></ul>
+	
+	
+</div>
+	
+<div data-role="collapsible" data-inset="false"><img src="assigntasksimg.jpeg" width="728" height="392" alt=""/>
+	
+    <h4>Identify and Assign Tasks</h4>
+	
+	<ul><li><p>Identify and assign tasks so students can practice and obtain immediate feedback during a tutoring session.</p></li></ul>
+		
+</div>
+	
+<div data-role="collapsible" data-inset="false">
+	
+    <h4>Assign Future Tasks</h4>
+	
+	<ul><li><p>Assign future tasks</p></li></ul>
+		
+		
+		
+		
+	</div><!-- /content -->
+
+	    <div data-role="footer" data-position="fixed">
+				<div data-role="footer">
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#resources" data-icon="phone">Resources</a></li>
+			<li><a href="#contact" data-icon="user">Contact</a></li>
+			
+		</ul>
+	</div><!-- /navbar -->
+</div><!-- /footer -->
+	</div>
+    
+	</div></div>
+
+
+
+
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+<!-- Start of conducting page -->
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+
+
+
+
+
+
+
+<div data-role="page" id="conducting" style="background-color:steelblue">
+
+	<div data-role="header">
+		<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn">Back Home</a>
+		<h1>Conducting a Session</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+	</div><!-- /content -->
+	
+	<h3 class="ui-bar ui-bar-a ui-corner-all">Active Listening:</h3>
+	<div class="ui-body ui-body-a ui-corner-all" ><br><img src="activelisteningImg.jpeg" width="367" height="260" alt=""/></div><br>
+		  
+		      
+				  
+			<div class="ui-body ui-body-a ui-corner-all" >	  
+				  <h4>Quick Tips for Active Listening</h4>
+		      <ul><li><p>Make eye contact</p></li>
+			  <li><p>Lean slightly toward the student</p></li>
+			  <li><p>Guide students to make appropriate choices</p></li>
+			  <li><p>Respond with appropriate facial expressions</p></li>
+				  <li><p>Relax when you are watching the students communicate</p></li>
+		  </ul>
+      </div>
+	<br>
+	<div class="ui-body ui-body-a ui-corner-all" >
+		  <h4>Paraphrase what the student communicated</h4>
+		      <ul><li><p>Ask questions that will lead the student to her/his own solution</p></li>
+			  <li><p>Offer constructive feedback rather than criticize</p></li>
+			  <li><p>Guide students to make appropriate choices</p></li>
+			  <li><p>Ask the student if there is anything else s/he can share</p></li>
+				  <li><p>Be sympathetic to difficult situations.</p></li>
+		  </ul>
+      </div>
+	
+
+	
+
+	<div data-role="footer" data-position="fixed">
+	<div data-role="footer">
+		<div data-role="navbar">
+		<ul>
+			<li><a href="#resources" data-icon="phone">resources</a></li>
+			<li><a href="#contact" data-icon="user">Contact</a></li>
+			
+		</ul>
+	</div><!-- /navbar -->
+	</div><!-- /footer -->
+	</div><!-- /page --></div>
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+<!-- Start of closing page -->
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+<div data-role="page" id="closing" style="background-color:steelblue">
+
+	<div data-role="header">
+		<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn">Back Home</a>
+		<h1>Closing a Session</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		
+		<h3 class="ui-bar ui-bar-a ui-corner-all">After a Session:</h3>
+      <div class="ui-body ui-body-a ui-corner-all" ><img src="communication.jpeg" width="367" height="190" alt=""/>
+		  <ul><li><p>Review & reflect on the session</p></li>
+		      <li><p>Assign future tasks</p></li>
+			  <li><p>Schedule a follow up session</p></li>
+			
+		  </ul>
+      </div>
+		
+	</div><!-- /content -->
+
+	    <div data-role="footer" data-position="fixed">
+		<div data-role="footer">		
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#resources" data-icon="phone">Resources</a></li>
+			<li><a href="#contact" data-icon="user">Contact</a></li>
+			
+		</ul>
+	</div><!-- /navbar -->
+</div><!-- /footer -->
+	</div></div>
+
+
+    
+	
+	
+	
+	
+
+
+
+<!-- Start of collaboration page -->
+
+
+
+
+
+	
+	
+	
+	
+	
+
+
+
+<div data-role="page" id="resources" style="background-color:steelblue">
+
+	<div data-role="header">
+		<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn">Back Home</a>
+		<h1>Resources</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+		
+	</div><!-- /content -->
+
+	    <div data-role="footer" data-position="fixed">
+		<div data-role="footer">		
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#resources" data-icon="phone">Resources</a></li>
+			<li><a href="#contact" data-icon="user">Contact</a></li>
+			
+		</ul>
+	</div><!-- /navbar -->
+</div><!-- /footer -->
+	</div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Start of contact page -->
+
+
+
+
+
+
+
+
+<div data-role="page" id="contact" style="background-color:steelblue">
+
+	<div data-role="header">
+		<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn">Back Home</a>
+		<h1>Contact</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		
+		
+		<h3 class="ui-bar ui-bar-a ui-corner-all">Library Research and APA style support for writing tutors</h3>
+      <div class="ui-body ui-body-a ui-corner-all" ><img src="communication.jpeg" width="367" height="190" alt=""/>
+		  <h4>Ask a Librarian</h4>
+		  <p>Have a research or APA style question? The Florida Electronic Library connects you to librarians across the State of Florida.</p>
+
+		  <h3><a href="https://v2.libanswers.com/chati.php?hash=a7540bb3590949084a8e2baa81830b83&amp;referer=http%3A%2F%2Faskalibrarian.org%2Fwidgets%2Fmdc%2F&amp;referer_title=Miami%20Dade%20College%20Ask%20a%20Librarian%20Widget" title="Ask a Librarian " target="_self">Chat</a> | <a href="https://askalibrarian.org/email.php?id=1684" title="Email" target="_self">Email</a> | <a href="https://askalibrarian.org/sms.php?LibraryName=Miami%20Dade%20College&amp;DepartmentNumber=22864&amp;sms=3055703354" title="Text" target="_self">Text</a></h3></div><br>
+		  
+		 <h3 class="ui-bar ui-bar-a ui-corner-all">Contact a writing tutor on campus</h3>
+      <div class="ui-body ui-body-a ui-corner-all" ><img src="communication.jpeg" width="367" height="190" alt=""/>
+		  <h4>Reach out to a writing colleague on campus</h4>
+		  
+
+		  <p>Kelly Hernandez | Medical Campus | 305-237-4364</p>
+			  <p>Meehan Charles | Medical Campus | 305-237-2386</p>
+			  <p>ariane Tuklloch | Medical Campus | 305-237-1496</p>
+		
+	</div><!-- /content -->
+
+	    <div data-role="footer" data-position="fixed">
+		<div data-role="footer">		
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#resources" data-icon="phone">Resources</a></li>
+			<li><a href="#contact" data-icon="user">Contact</a></li>
+			
+			
+			
+		</ul>
+	</div><!-- /navbar -->
+</div><!-- /footer -->
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	</div>	</body></html>
+
+
+
+
